@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous"
+        />
+    
+            <title>Recipe Rack</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Recipe Rack</h1>
+            <form>
+                <input type="text" 
+                placeholder="Search for recipes..."
+                class="searchBox">
+                <button type="submit"class="searchBtn">Search</button>
+            </form>
+        </nav>
+    </header>
+    <div class="container">
+        <input type="radio" Name="slider" id="glutenfree" checked>
+        <input type="radio" Name="slider" id="sugarfree">
+        <input type="radio" Name="slider" id="vegan">
+        <input type="radio" Name="slider" id="healthy">
+        <input type="radio" Name="slider" id="millet">
+        
+
+        <nav>
+            <label for="glutenfree" class="glutenfree">GlutenFree</label>
+            <label for="sugarfree" class="sugarfree">SugarFree</label>
+            <label for="vegan" class="vegan">Vegan</label>
+            <label for="healthy" class="healthy">Healthy</label>
+            <label for="millet" class="millet">Millet</label>
+            <div class="slider"></div>
+        </nav>
+        <section>
+            <div class="content content-">
+                <div class="title">GlutenFree</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quam ratione ab? Error a laborum nam aperiam nostrum qui architecto.</p>
+            </div>
+            <div class="content content-">
+                <div class="title">SugarFree</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quam ratione ab? Error a laborum nam aperiam nostrum qui architecto.</p>
+            </div>
+            <div class="content content-">
+                <div class="title">Vegan</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quam ratione ab? Error a laborum nam aperiam nostrum qui architecto.</p>
+            </div>
+            <div class="content content-">
+                <div class="title">Healthy</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quam ratione ab? Error a laborum nam aperiam nostrum qui architecto.</p>
+            </div>
+            <div class="content content-">
+                <div class="title">Millet</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quam ratione ab? Error a laborum nam aperiam nostrum qui architecto.</p>
+            </div>
+        </section>
+    </div>
+    <main>
+        <section>
+            <div class="recipe-container">
+                <h2>Search your favourite recipes</h2>
+            </div>
+            <div class="recipe-details">
+                <button type="button" class="recipe-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="recipe-details-content"></div>           
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
